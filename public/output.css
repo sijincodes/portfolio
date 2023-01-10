@@ -791,6 +791,11 @@ body,
   top: -50%;
 }
 
+.before\:left-\[-50\%\]::before{
+  content: var(--tw-content);
+  left: -50%;
+}
+
 .before\:h-6::before{
   content: var(--tw-content);
   height: 1.5rem;
