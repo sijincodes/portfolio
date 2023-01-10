@@ -1,6 +1,7 @@
 import Navbar from "./scenes/Navbar"
 import DotGroup from "./scenes/DotGroup"
 import Landing from "./scenes/Landing"
+import Projects from "./scenes/Projects"
 import {useState,useEffect} from "react"
 import useMediaQuery from "./hooks/useMediaQuery"
 
@@ -30,6 +31,9 @@ function App() {
           selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      <div className="w-5/6 mx-auto">
+          <Projects />
       </div>
     </div>
   );
