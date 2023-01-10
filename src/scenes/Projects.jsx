@@ -41,8 +41,8 @@ function Projects() {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            MY
-            <span className="text-red">PRO</span>JECTS
+            MY {" "}
+            <span className="text-red pl-5">PRO</span>JECTS
           </p>
         </div>
         <p className="mt-10 mb-10">
