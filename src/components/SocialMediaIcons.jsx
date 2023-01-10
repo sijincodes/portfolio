@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialMediaIcons() {
   return (
-    <div className="flex justify-center md:justify-start my-10 gap-7">
+    <div className="flex justify-center items-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.linkedin.com/in/sijin-mathews/"
@@ -17,7 +17,7 @@ function SocialMediaIcons() {
         target="_blank"
         rel="noreferrer"
       >
-    <img src="../assets/GitHub-Mark.png" className="h-8 rounded-full " alt="github-link" />
+    <img src="../assets/GitHub-Mark.png" className="h-8  rounded-full " alt="github-link" />
       </a>
     </div>
   );
