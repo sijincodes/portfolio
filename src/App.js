@@ -3,6 +3,7 @@ import DotGroup from "./scenes/DotGroup"
 import Landing from "./scenes/Landing"
 import Projects from "./scenes/Projects"
 import Contact from "./scenes/Contact"
+import Footer from "./scenes/Footer"
 import {useState,useEffect} from "react"
 import useMediaQuery from "./hooks/useMediaQuery"
 
@@ -38,6 +39,9 @@ function App() {
       </div>
       <div className="w-5/6 mx-auto md:h-full">
           <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
