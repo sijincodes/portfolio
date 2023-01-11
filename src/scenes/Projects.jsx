@@ -41,17 +41,12 @@ function Projects() {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            MY {" "}
-            <span className="text-red pl-5">PRO</span>JECTS
+            MY <span className="text-red pl-5">PRO</span>JECTS
           </p>
         </div>
-        <p className="mt-10 mb-10">
-          lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsum
-          lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        </p>
       </motion.div>
       {/* PROJECTS */}
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-10 mb-10">
         <motion.div
           className="sm:grid sm:grid-cols-3"
           initial="hidden"

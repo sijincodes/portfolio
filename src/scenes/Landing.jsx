@@ -7,7 +7,14 @@ import SocialMediaIcons from "./../components/SocialMediaIcons";
 
 function Landing({ setSelectedPage }) {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-  const skills = ['JavaScript', 'React', 'Express', 'Node.js', 'Mongoose', 'Cypress'];
+  const skills = [
+    "JavaScript",
+    "React",
+    "Express",
+    "Node.js",
+    "Mongoose",
+    "Cypress",
+  ];
   return (
     <section
       id="home"
@@ -60,21 +67,29 @@ before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before
           </p>
           <p className="pt-20 text-md text-center md:text-start">
             Hi 👋 I am a Web Developer based out of Berlin.
-            </p>
-            <p className="pt-2 text-md text-center md:text-start">
-              Previously,I was working as a QA in IT sector for 7 years, and
-              while I had fun doing that I was curious to try my hand at coding
-              👩🏽‍💻. Realized, I enjoy coding and find it thrilling to build things
-            that live on the internet 💻
-            </p>
-           
-            <p className="pt-2 text-md text-center md:text-start">
-              Fast-forward today, I am looking for Web Dev opportunities, where
-              I can be a value-add{" "}
-            </p>
-            <p className="pt-2 text-md text-center md:text-start">Here are a few technologies I’ve been working with recently:</p>
-            <ul  className="sm:grid sm:grid-cols-3 mt-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-            {skills && skills.map((skill, i) => <li key={i} ><span className="pr-5">➤</span>{skill}</li>)}
+          </p>
+          <p className="pt-2 text-md text-center md:text-start">
+            Previously,I was working as a QA in IT sector for 7 years, and while
+            I had fun doing that I was curious to try my hand at coding 👩🏽‍💻.
+            Realized, I enjoy coding and find it thrilling to build things that
+            live on the internet 💻
+          </p>
+
+          <p className="pt-2 text-md text-center md:text-start">
+            Fast-forward today, I am looking for Web Dev opportunities, where I
+            can be a value-add{" "}
+          </p>
+          <p className="pt-2 text-md text-center md:text-start">
+            Here are a few technologies I’ve been working with recently:
+          </p>
+          <ul className="grid grid-cols-3 mt-5 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            {skills &&
+              skills.map((skill, i) => (
+                <li key={i}>
+                  <span className="pr-2">➤</span>
+                  {skill}
+                </li>
+              ))}
           </ul>
         </motion.div>
         {/* call to actions */}

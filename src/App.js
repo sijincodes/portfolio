@@ -3,11 +3,10 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
-import Footer from "./scenes/Footer";
+import Timeline from "./scenes/Timeline";
 import { useState, useEffect } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import Timeline from "./scenes/Timeline";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -50,7 +49,6 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
-        
       </div>
       <div className="w-5/6 mx-auto">
         <motion.div
@@ -71,16 +69,13 @@ function App() {
         </motion.div>
       </div>
       <div className="w-5/6 mx-auto md:h-full">
-      <motion.div
+        <motion.div
           margin="0 0 -200px 0"
           amount="all"
           onViewportEnter={() => setSelectedPage("contact")}
         >
-          <Contact  />
+          <Contact />
         </motion.div>
-      </div>
-      <div>
-        <Footer />
       </div>
     </div>
   );
