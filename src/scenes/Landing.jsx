@@ -28,9 +28,9 @@ before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before
           </div>
         ) : (
           <img
-            src="./../assets/profile-image.png"
+            src="./../assets/sijinpic.png"
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500z-10 w-full
+            className="hover:filter  rounded-t-[400px]  hover:saturate-200 transition duration-500z-10 w-full
     max-w-[400px] md:max-w[600px]"
           />
         )}

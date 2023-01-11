@@ -47,7 +47,7 @@ function Contact() {
           }}
         >
           {" "}
-          <img src="../assets/contact-image.jpeg" alt="contact-img" />
+          <img src="../assets/contact-me.jpeg" alt="contact-img" />
         </motion.div>
         <motion.div
           className="basis-1/2 mt-10 md:mt-0"
@@ -117,8 +117,8 @@ function Contact() {
             )}
             <button
               type="submit"
-              className="p5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red
-               hover:text-white transition duration-500"
+              className="inline-block px-6 py-2.5  bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red
+               hover:text-white transition duration-500 rounded-md "
             >
               Send
             </button>
