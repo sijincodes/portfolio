@@ -29,7 +29,7 @@ function Contact() {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            <span className="text-yellow pr-3">CONTACT</span>ME
+            <span className="text-light-brown pr-3">CONTACT</span>ME
           </p>
         </div>
       </motion.div>
@@ -68,7 +68,7 @@ function Contact() {
           >
             <input
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-light-brown font-semibold placeholder-opaque-black p-3"
               placeholder="NAME"
               {...register("name", {
                 required: true,
@@ -84,7 +84,7 @@ function Contact() {
             )}
             <input
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-light-brown font-semibold placeholder-opaque-black p-3 mt-5"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
@@ -99,7 +99,7 @@ function Contact() {
             )}
             <textarea
               type="text"
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full bg-light-brown font-semibold placeholder-opaque-black p-3 mt-5"
               placeholder="MESSAGE"
               rows="4"
               cols="50"
@@ -117,7 +117,7 @@ function Contact() {
             )}
             <button
               type="submit"
-              className="inline-block px-6 py-2.5  bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red
+              className="inline-block px-6 py-2.5  bg-gradient-rainblue font-semibold text-deep-blue mt-5 hover:bg-red
                hover:text-white transition duration-500 rounded-md "
             >
               Send

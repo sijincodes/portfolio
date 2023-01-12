@@ -18,11 +18,11 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
   };
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const navbarBackground = isTopOfPage ? "" : "bg-brown";
   return (
     <nav className={` ${navbarBackground} z-40 w-full fixed top-0 py-3`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">SM</h4>
+        <h4 className="font-playfair text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">SM</h4>
 
         {isAboveSmallScreens ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
@@ -57,7 +57,7 @@ function Navbar({ isTopOfPage, selectedPage, setSelectedPage }) {
         )}
         {/* mobile menu */}
         {!isAboveSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-light-brown w-[300px]">
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <img alt="close-icon" src="../assets/close-icon.svg" />

@@ -12,15 +12,44 @@ function Projects() {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1 },
   };
-  const Project = ({ title }) => {
+  const Project = ({ title, subtitle, gitlink, sitelink }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex-col 
     justify-center items-center p-16 text-deep-blue`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
     return (
       <motion.div className="relative" variants={projectVarient}>
         <div className={overlayStyles}>
-          <p className="text-2xl font-playfair">{title}</p>
-          <p className="mt-7">Send your sub-title like the title</p>
+          <p className="text-md font-opensans font-bold  pl-8">{title}</p>
+          <p className="mt-1 pl-8 text-md font-opensans"><span className="font-bold">Tech-Stack: </span>{subtitle}</p>
+
+          <div className="flex justify-evenly">
+            <a
+              className="hover:underline "
+              href={gitlink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/GitHub-Mark.png"
+                className="h-8 mt-5 rounded-full  pl-2"
+                alt="github-link"
+              />
+              <span>Git Hub</span>
+            </a>
+            <a
+              className="hover:underline "
+              href={sitelink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="../assets/website.webp"
+                className="h-8 mt-5 rounded-full  pl-2"
+                alt="github-link"
+              />
+              <span>Website</span>
+            </a>
+          </div>
         </div>
         <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
       </motion.div>
@@ -33,7 +62,7 @@ function Projects() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.2 }}
         variants={{
           hidden: { opacity: 0, y: -50 },
           visible: { opacity: 1, y: 0 },
@@ -41,7 +70,7 @@ function Projects() {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-            MY <span className="text-red pl-5">PRO</span>JECTS
+            MY <span className="text-light-brown pl-5">PRO</span>JECTS
           </p>
         </div>
       </motion.div>
@@ -51,25 +80,30 @@ function Projects() {
           className="sm:grid sm:grid-cols-3"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2}}
+          transition={{ duration: 0.2 }}
           variants={container}
         >
           {/* Row 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] 
-          text-2xl font-playfair font-semibold"
+          text-2xl font-playfair font-semibold text-brown"
           >
             Full-Stack Projects{" "}
             <span className="material-icons p-5 mt-1">arrow_forward</span>
           </div>
-          <Project title={"Project 1"} />
+          <Project
+            title={"pennyWise-Expense Tracker"}
+            subtitle={"Mongoose, Express, React, NodeJs"}
+            gitlink={"https://github.com/sijincodes/ExpenseTracker-client"}
+            sitelink={"https://penny-wise-sm.netlify.app/"}
+          />
           <Project title={"Project 2"} />
 
           {/* Row 2 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] 
-          text-2xl font-playfair font-semibold"
+          text-2xl font-playfair font-semibold text-brown"
           >
             FrontEnd Projects{" "}
             <span className="material-icons p-5 mt-1">arrow_forward</span>

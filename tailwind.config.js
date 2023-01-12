@@ -12,6 +12,8 @@ module.exports = {
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        "brown":"#3C2A21",
+        "light-brown":"#AD8E70"
         
       },
       backgroundImage: (theme) => ({
