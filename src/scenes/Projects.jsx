@@ -2,22 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function Projects() {
-  const container = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-  const projectVarient = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 },
-  };
+
   const Project = ({ title, subtitle, gitlink, sitelink }) => {
     const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex-col 
-    justify-center items-center p-16 text-deep-blue`;
+    justify-center items-center p-10 text-deep-blue`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
     return (
-      <motion.div className="relative" variants={projectVarient}>
+      <div className="relative" >
         <div className={overlayStyles}>
           <p className="text-md font-opensans font-bold  pl-8">{title}</p>
           <p className="mt-1 pl-8 text-md font-opensans">
@@ -34,7 +25,7 @@ function Projects() {
             >
               <img
                 src="../assets/GitHub-Mark.png"
-                className="h-8 mt-5 rounded-full  pl-2"
+                className="h-8 mt-3 rounded-full  pl-2"
                 alt="github-link"
               />
               <span>Git Hub</span>
@@ -47,7 +38,7 @@ function Projects() {
             >
               <img
                 src="../assets/website.webp"
-                className="h-8 mt-5 rounded-full  pl-2"
+                className="h-8 mt-3 rounded-full  pl-2"
                 alt="github-link"
               />
               <span>Website</span>
@@ -59,7 +50,7 @@ function Projects() {
           alt={projectTitle}
           
         />
-      </motion.div>
+      </div>
     );
   };
   return (
@@ -85,11 +76,7 @@ function Projects() {
       <div className="flex justify-center mt-10 mb-10">
         <motion.div
           className="sm:grid sm:grid-cols-3"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.2 }}
-          variants={container}
+         
         >
           {/* Row 1 */}
           <div
