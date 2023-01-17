@@ -20,7 +20,10 @@ function Projects() {
       <motion.div className="relative" variants={projectVarient}>
         <div className={overlayStyles}>
           <p className="text-md font-opensans font-bold  pl-8">{title}</p>
-          <p className="mt-1 pl-8 text-md font-opensans"><span className="font-bold">Tech-Stack: </span>{subtitle}</p>
+          <p className="mt-1 pl-8 text-md font-opensans">
+            <span className="font-bold">Tech-Stack: </span>
+            {subtitle}
+          </p>
 
           <div className="flex justify-evenly">
             <a
@@ -51,7 +54,11 @@ function Projects() {
             </a>
           </div>
         </div>
-        <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+        <img
+          src={`../assets/${projectTitle}.jpeg`}
+          alt={projectTitle}
+          
+        />
       </motion.div>
     );
   };
@@ -80,7 +87,7 @@ function Projects() {
           className="sm:grid sm:grid-cols-3"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2}}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.2 }}
           variants={container}
         >
@@ -93,12 +100,17 @@ function Projects() {
             <span className="material-icons p-5 mt-1">arrow_forward</span>
           </div>
           <Project
-            title={"pennyWise-Expense Tracker"}
+            title={"pennyWise-ExpenseTracker"}
             subtitle={"Mongoose, Express, React, NodeJs"}
             gitlink={"https://github.com/sijincodes/ExpenseTracker-client"}
             sitelink={"https://penny-wise-sm.netlify.app/"}
           />
-          <Project title={"Project 2"} />
+          <Project
+            title={"Job-Tracker"}
+            subtitle={"Mongoose, Express, React, NodeJs"}
+            gitlink={"https://github.com/sijincodes/JobApplicationTracker-client"}
+            sitelink={""}
+          />
 
           {/* Row 2 */}
           <div
@@ -108,7 +120,12 @@ function Projects() {
             FrontEnd Projects{" "}
             <span className="material-icons p-5 mt-1">arrow_forward</span>
           </div>
-          <Project title={"Project 5"} />
+          <Project
+            title={"Traveler-Travigo"}
+            subtitle={"React,JavaScript,Tailwind CSS"}
+            gitlink={"https://github.com/sijincodes/Traveler"}
+            sitelink={""}
+          />
           <Project title={"Project 6"} />
         </motion.div>
       </div>
