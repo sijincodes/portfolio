@@ -102,7 +102,7 @@ function Projects() {
             title={"Job-Tracker"}
             subtitle={"Mongoose, Express, React, NodeJs"}
             gitlink={"https://github.com/sijincodes/JobApplicationTracker-client"}
-            sitelink={""}
+            sitelink={"https://job-application-tracker-sm.netlify.app"}
           />
 
           {/* Row 2 */}
@@ -117,7 +117,7 @@ function Projects() {
             title={"Traveler-Travigo"}
             subtitle={"React,JavaScript,Tailwind CSS"}
             gitlink={"https://github.com/sijincodes/Traveler"}
-            sitelink={""}
+            sitelink={"https://travigo-traveler-sm.netlify.app"}
           />
           {/* <Project title={"Project 6"} /> */}
         </motion.div>
