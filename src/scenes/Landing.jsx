@@ -14,6 +14,10 @@ function Landing({ setSelectedPage }) {
     "Node.js",
     "Mongoose",
     "Cypress",
+    "SASS",
+    "Tailwind",
+    "Material UI",
+    
   ];
   return (
     <section

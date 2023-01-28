@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Projects() {
 
   const Project = ({ title, subtitle, gitlink, sitelink }) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex-col 
+    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-light-brown z-30 flex-col 
     justify-center items-center p-10 text-deep-blue`;
     const projectTitle = title.split(" ").join("-").toLowerCase();
     return (
@@ -54,7 +54,7 @@ function Projects() {
     );
   };
   return (
-    <section id="projects" className="pt-48 pb-48">
+    <section id="projects" className="pt-40 pb-40">
       <motion.div
         className="md:w-2/4 mx-auto text-center"
         initial="hidden"
@@ -87,12 +87,18 @@ function Projects() {
             <span className="material-icons p-5 mt-1">arrow_forward</span>
           </div>
           <Project
+            title={"parfum-Ecommerce"}
+            subtitle={"React SASS Strapi Stripe"}
+            gitlink={"https://github.com/sijincodes/ecommerce-client"}
+            sitelink={""}
+          />
+          <Project
             title={"pennyWise-ExpenseTracker"}
             subtitle={"Mongoose, Express, React, NodeJs"}
             gitlink={"https://github.com/sijincodes/ExpenseTracker-client"}
             sitelink={"https://penny-wise-sm.netlify.app/"}
           />
-          <Project
+           <Project
             title={"Job-Tracker"}
             subtitle={"Mongoose, Express, React, NodeJs"}
             gitlink={"https://github.com/sijincodes/JobApplicationTracker-client"}
@@ -113,7 +119,7 @@ function Projects() {
             gitlink={"https://github.com/sijincodes/Traveler"}
             sitelink={""}
           />
-          <Project title={"Project 6"} />
+          {/* <Project title={"Project 6"} /> */}
         </motion.div>
       </div>
     </section>
