@@ -88,7 +88,7 @@ function Projects() {
           </div>
           <Project
             title={"parfum-Ecommerce"}
-            subtitle={"React SASS Strapi Stripe (Site is not hosted as backend is on Strapi)"}
+            subtitle={"React SASS Strapi Stripe (Site is not hosted due to Strapi)"}
             gitlink={"https://github.com/sijincodes/ecommerce-client"}
             sitelink={"https://res.cloudinary.com/djxzl8ay2/video/upload/v1674986559/JT/parfum_hewhb4.mp4"}
           />
