@@ -39,7 +39,7 @@ before:rounded-full before:w-full before:max-w-[400px] before:h-full before:bord
           </div>
         ) : (
           <img
-            src="./../assets/sijinpic.png"
+            src="./../assets/sijin.png"
             alt="profile"
             className="hover:filter  rounded-t-[400px]  hover:saturate-200 transition duration-500z-10 w-full
     max-w-[400px] md:max-w[600px]"
