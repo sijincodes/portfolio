@@ -31,7 +31,7 @@ function Landing({ setSelectedPage }) {
 before:rounded-full before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-light-brown before:z-[-1]"
           >
             <img
-              src="./../assets/sijinpic.png"
+              src="./../assets/sijin.png"
               alt="profile"
               className="hover:filter rounded-full transition duration-500z-10 w-full
     max-w-[400px] md:max-w[600px] "
