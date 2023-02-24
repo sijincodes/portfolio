@@ -9,6 +9,7 @@ function Landing({ setSelectedPage }) {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
   const skills = [
     "JavaScript",
+    "TypeScript",
     "React",
     "Express",
     "Node.js",
@@ -16,7 +17,7 @@ function Landing({ setSelectedPage }) {
     "Cypress",
     "SASS",
     "Tailwind",
-    "Material UI",
+    
     
   ];
   return (
