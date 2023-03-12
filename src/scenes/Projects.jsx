@@ -115,9 +115,9 @@ function Projects() {
           </div>
           <Project
             title={"Traveler-Travigo"}
-            subtitle={"React,JavaScript,Tailwind CSS"}
-            gitlink={"https://github.com/sijincodes/Traveler"}
-            sitelink={"https://travigo-traveler-sm.netlify.app"}
+            subtitle={"React,TypeScript,JavaScript,Tailwind CSS"}
+            gitlink={"https://github.com/sijincodes/Traveler-TS"}
+            sitelink={"https://travigo-traveler-typescript-sm.netlify.app/"}
           />
           {/* <Project title={"Project 6"} /> */}
         </motion.div>
